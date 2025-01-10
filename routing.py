@@ -27,7 +27,15 @@ def binary_search(locations, target_distance):
         return locations[left]
     else:
         return locations[right]
-
+def search(node, target):
+    if node is None:
+        return None 
+    elif node.data == target:
+        return node
+    elif target < node.data:
+        return search(node.left, target)
+    else:
+        return search(node.right, target)
 def main():
     # Sample sorted locations (sorted by distance)
     locations = [

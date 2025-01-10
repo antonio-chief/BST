@@ -14,6 +14,7 @@ def insert(node, data):
             node.right = insert(node.right, data)
     return node  # Return the (updated) current node
 
+
 # Example usage
 if __name__ == "__main__":
     root = None  # Start with an empty tree
