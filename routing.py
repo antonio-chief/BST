@@ -46,7 +46,7 @@ def main():
         Location("Location E", 25)
     ]
 
-    # Example: Finding the nearest location to a given distance
+    # Finding the nearest location to a given distance
     target_distance = 12
     nearest_location = binary_search(locations, target_distance)
 
